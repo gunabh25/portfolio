@@ -226,7 +226,7 @@ export default function Home() {
                   variants={scaleUp}
                   whileHover={{ y: -5 }}
                 >
-                  <h3 className="font-bold text-xl text-blue-600 mb-1">50+</h3>
+                  <h3 className="font-bold text-xl text-blue-600 mb-1">10+</h3>
                   <p className="text-gray-600">Projects</p>
                 </motion.div>
                 <motion.div 
@@ -234,7 +234,7 @@ export default function Home() {
                   variants={scaleUp}
                   whileHover={{ y: -5 }}
                 >
-                  <h3 className="font-bold text-xl text-blue-600 mb-1">30+</h3>
+                  <h3 className="font-bold text-xl text-blue-600 mb-1">5+</h3>
                   <p className="text-gray-600">Clients</p>
                 </motion.div>
                 <motion.div 
@@ -242,7 +242,7 @@ export default function Home() {
                   variants={scaleUp}
                   whileHover={{ y: -5 }}
                 >
-                  <h3 className="font-bold text-xl text-blue-600 mb-1">5+</h3>
+                  <h3 className="font-bold text-xl text-blue-600 mb-1">3+</h3>
                   <p className="text-gray-600">Years</p>
                 </motion.div>
                 <motion.div 
