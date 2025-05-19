@@ -83,7 +83,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <motion.button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-gray-600 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-purple-500 hover:text-red-400 focus:outline-none"
               whileTap={{ scale: 0.9 }}
               aria-expanded="false"
             >
@@ -119,7 +119,7 @@ export default function Navbar() {
               >
                 <Link 
                   href="/" 
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-red-400"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
@@ -131,7 +131,7 @@ export default function Navbar() {
               >
                 <Link 
                   href="/about" 
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-red-400"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About
@@ -143,7 +143,7 @@ export default function Navbar() {
               >
                 <Link 
                   href="/projects" 
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-red-400"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Projects
@@ -155,7 +155,7 @@ export default function Navbar() {
               >
                 <Link 
                   href="/skills" 
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-red-400"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Skills
@@ -167,7 +167,7 @@ export default function Navbar() {
               >
                 <Link 
                   href="/contact" 
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-red-400"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Contact
