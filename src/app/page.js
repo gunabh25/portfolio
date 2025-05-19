@@ -127,7 +127,7 @@ export default function Home() {
               </motion.a>
 
               <motion.a
-              href="mailto:gunabhsharan.25@gmail.com" // ← Replace with your actual email
+              href="mailto:gunabhsharan.25@gmail.com"
               className="inline-block px-8 py-3 border border-gray-300 hover:border-gray-400 rounded-lg font-medium transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
