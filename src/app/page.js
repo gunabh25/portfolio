@@ -54,24 +54,24 @@ export default function Home() {
   const featuredProjects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with real-time inventory management.",
+      title: "Student Tracking Platform",
+      description: "A full-stack web app to track student attendance, performance, and activity in real-time.",
       image: "/api/placeholder/600/400",
-      tags: ["Next.js", "MongoDB", "Stripe"]
+      tags: ["Next.js", "MongoDB", "ZOD", "Tailwind CSS"]
     },
     {
       id: 2,
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for tracking engagement across social platforms.",
+      title: "Mood Tracker",
+      description: "A mood tracker app with emoji-based input and a color-coded calendar",
       image: "/api/placeholder/600/400",
-      tags: ["React", "D3.js", "Firebase"]
+      tags: ["Next.js", "MongoDB", "Tailwind CSS"]
     },
     {
       id: 3,
-      title: "Mobile Fitness App",
-      description: "React Native application for tracking workouts and nutrition.",
+      title: "Website - Prayaas Electoral Literacy Club, ABESIT",
+      description: "Official website for Prayaas ELC ABESIT, highlighting events, initiatives, and team members.",
       image: "/api/placeholder/600/400",
-      tags: ["React Native", "GraphQL", "AWS"]
+      tags: ["HTML", "CSS", "Bootstrap", "JavaScript"]
     }
   ];
 
