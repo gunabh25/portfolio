@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
+import { ExternalLink } from "lucide-react";
 
 // Animation variants
 const fadeIn = {
@@ -56,22 +57,25 @@ export default function Home() {
       id: 1,
       title: "Student Tracking Platform",
       description: "A full-stack web app to track student attendance, performance, and activity in real-time.",
-      image: "/api/placeholder/600/400",
-      tags: ["Next.js", "MongoDB", "ZOD", "Tailwind CSS"]
+      image: "/gifs/student-tracking.gif",
+      tags: ["Next.js", "MongoDB", "ZOD", "Tailwind CSS"],
+      link: "https://student-tracking-platform.vercel.app/"
     },
     {
       id: 2,
       title: "Mood Tracker",
       description: "A mood tracker app with emoji-based input and a color-coded calendar",
-      image: "/api/placeholder/600/400",
-      tags: ["Next.js", "MongoDB", "Tailwind CSS"]
+      image: "/gifs/mood-tracking.gif",
+      tags: ["Next.js", "MongoDB", "Tailwind CSS"],
+      link: "https://mood-tracker-dun-delta.vercel.app/"
     },
     {
       id: 3,
       title: "Website - Prayaas Electoral Literacy Club, ABESIT",
       description: "Official website for Prayaas ELC ABESIT, highlighting events, initiatives, and team members.",
-      image: "/api/placeholder/600/400",
-      tags: ["HTML", "CSS", "Bootstrap", "JavaScript"]
+      image: "/gifs/voting.gif",
+      tags: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      link: "https://prayaas-elc-abesit-v924.vercel.app/"
     }
   ];
 
@@ -331,13 +335,20 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-                  <motion.button
-                    className="px-4 py-2 border border-blue-600 text-blue-600 rounded-lg text-sm font-medium hover:bg-blue-600 hover:text-white transition-colors"
+                  <motion.a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                  >
-                    View Project
-                  </motion.button>
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                      >
+                          View Project 
+                    <ExternalLink size={16} />
+                    </motion.a>
                 </div>
               </motion.div>
             ))}
