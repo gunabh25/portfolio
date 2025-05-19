@@ -347,13 +347,13 @@ export default function Home() {
             className="mt-12 text-center"
             variants={fadeIn}
           >
-            <motion.button
+            {/* <motion.button
               className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               View All Projects
-            </motion.button>
+            </motion.button> */}
           </motion.div>
         </div>
       </motion.section>
