@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import { ExternalLink } from "lucide-react";
+import { FaTwitter, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 // Animation variants
 const fadeIn = {
@@ -465,19 +466,26 @@ export default function Home() {
               <p className="text-gray-400 mb-4">
                 Creating exceptional digital experiences with modern web technologies.
               </p>
+          
               <div className="flex space-x-4">
-                {['Twitter', 'GitHub', 'LinkedIn', 'Instagram'].map((social, index) => (
-                  <a 
-                    key={index} 
-                    href="#" 
-                    className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors"
-                  >
-                    <span className="text-sm">{social.charAt(0)}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
-            
+  {[
+    { name: 'Twitter', link: 'https://x.com/GunabhS' },
+    { name: 'GitHub', link: 'https://github.com/gunabh25' },
+    { name: 'LinkedIn', link: 'https://www.linkedin.com/in/gunabh-sharan-a65380257/' },
+    { name: 'Instagram', link: 'https://www.instagram.com/i.sharan._/' },
+  ].map((social, index) => (
+    <a
+      key={index}
+      href={social.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition-colors"
+    >
+      <span className="text-sm">{social.name.charAt(0)}</span>
+    </a>
+  ))}
+</div>
+    </div>        
             <div>
               <h3 className="text-xl font-medium mb-4">Quick Links</h3>
               <ul className="space-y-2">
@@ -494,15 +502,15 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-medium mb-4">Contact</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>hello@example.com</li>
-                <li>+1 (555) 123-4567</li>
-                <li>San Francisco, CA</li>
+                <li>gunabhsharan.25@gmail.com</li>
+                <li>+91 7061557021</li>
+                <li>New Delhi, India</li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Your Portfolio. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Gunabh Sharan. All rights reserved.</p>
           </div>
         </div>
       </footer>
