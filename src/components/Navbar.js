@@ -43,7 +43,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="/" className="text-2xl font-bold from-purple-600 to-red-300 bg-gradient-to-r bg-clip-text text-transparent">
+            <Link href="/" className="text-2xl font-bold from-purple-600 to-sky-400 bg-gradient-to-r bg-clip-text text-transparent">
               Gunabh Sharan
             </Link>
           </motion.div>
@@ -52,27 +52,27 @@ export default function Navbar() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
-                <Link href="/" className="text-purple-500 hover:text-red-400 transition-colors font-extrabold">
+                <Link href="/" className="text-purple-500 hover:text-sky-400 transition-colors font-extrabold">
                   Home
                 </Link>
               </motion.div>
               <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
-                <Link href="/about" className="text-purple-500 hover:text-red-400 transition-colors font-extrabold">
+                <Link href="/about" className="text-purple-500 hover:text-sky-400 transition-colors font-extrabold">
                   About
                 </Link>
               </motion.div>
               <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
-                <Link href="/projects" className="text-purple-500 hover:text-red-400 transition-colors font-extrabold">
+                <Link href="/projects" className="text-purple-500 hover:text-sky-400 transition-colors font-extrabold">
                   Projects
                 </Link>
               </motion.div>
               <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
-                <Link href="/skills" className="text-purple-500 hover:text-red-400 transition-colors font-extrabold">
+                <Link href="/skills" className="text-purple-500 hover:text-sky-400 transition-colors font-extrabold">
                   Skills
                 </Link>
               </motion.div>
               <motion.div whileHover={{ y: -2 }} whileTap={{ y: 0 }}>
-                <Link href="/contact" className="text-purple-500 hover:text-red-400 transition-colors font-extrabold">
+                <Link href="/contact" className="text-purple-500 hover:text-sky-400 transition-colors font-extrabold">
                   Contact
                 </Link>
               </motion.div>
@@ -83,7 +83,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <motion.button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-purple-500 hover:text-red-400 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-purple-500 hover:text-sky-400 focus:outline-none"
               whileTap={{ scale: 0.9 }}
               aria-expanded="false"
             >
@@ -119,7 +119,7 @@ export default function Navbar() {
               >
                 <Link 
                   href="/" 
-                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-red-400"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-sky-400"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Home
@@ -131,7 +131,7 @@ export default function Navbar() {
               >
                 <Link 
                   href="/about" 
-                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-red-400"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-sky-400"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   About
@@ -143,7 +143,7 @@ export default function Navbar() {
               >
                 <Link 
                   href="/projects" 
-                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-red-400"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-sky-400"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Projects
@@ -155,7 +155,7 @@ export default function Navbar() {
               >
                 <Link 
                   href="/skills" 
-                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-red-400"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-sky-400"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Skills
@@ -167,7 +167,7 @@ export default function Navbar() {
               >
                 <Link 
                   href="/contact" 
-                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-red-400"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-purple-500 hover:text-sky-400"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Contact
