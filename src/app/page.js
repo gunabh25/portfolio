@@ -444,13 +444,14 @@ export default function Home() {
               I&apos;m currently available for freelance work or full-time opportunities.
               Let&apos;s create something amazing together!
             </motion.p>
-            <motion.button
-              className="px-8 py-3 bg-white text-blue-600 rounded-lg font-medium shadow-md"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <motion.a
+             href="mailto:gunabhsharan.25@gmail.com"
+             className="inline-block px-8 py-3 bg-white text-blue-600 rounded-lg font-medium shadow-md"
+             whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             >
               Get In Touch
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </motion.section>
