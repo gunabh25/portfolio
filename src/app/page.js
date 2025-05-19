@@ -114,24 +114,30 @@ export default function Home() {
               className="flex flex-wrap gap-4"
               variants={staggerContainer}
             >
-              <motion.button
-                className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                variants={fadeIn}
-              >
-                View My Work
-              </motion.button>
-              <motion.button
-                className="px-8 py-3 border border-gray-300 hover:border-gray-400 rounded-lg font-medium transition-colors"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                variants={fadeIn}
-              >
-                Contact Me
-              </motion.button>
-            </motion.div>
-          </motion.div>
+              <motion.a
+              href="https://drive.google.com/drive/folders/1zbe7xzYipkbgXlBf0_ozkfr1Ea_rKiK5?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              variants={fadeIn}
+            >
+              Download My Resume
+              </motion.a>
+
+              <motion.a
+              href="mailto:gunabhsharan.25@gmail.com" // ← Replace with your actual email
+              className="inline-block px-8 py-3 border border-gray-300 hover:border-gray-400 rounded-lg font-medium transition-colors"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              variants={fadeIn}
+            >
+              Contact Me
+              </motion.a>
+
+              </motion.div>
+              </motion.div>
           
           <motion.div
             className="relative"
@@ -142,9 +148,14 @@ export default function Home() {
               whileHover={{ rotate: 3, scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              <div className="absolute inset-0 flex items-center justify-center text-white text-opacity-70">
-                <span className="text-xl font-medium">Your Hero Image</span>
-              </div>
+              <Image 
+                src="/hero-image.jpg"
+                alt="Professional Developer Working"
+                width={800}
+                height={600}
+                className="w-full h-full object-cover"
+                priority
+              />
             </motion.div>
             
             {/* Floating shapes */}
@@ -204,8 +215,8 @@ export default function Home() {
                 className="text-lg text-gray-600 mb-6"
                 variants={fadeIn}
               >
-                I&apos;m a developer with over 5 years of experience building web and mobile applications. 
-                I specialize in React, Next.js, and Node.js, creating performant and scalable solutions 
+                I&apos;m a developer with over 3 years of experience building web and mobile applications. 
+                I specialize in React.js, Next.js, and Node.js, creating performant and scalable solutions 
                 for businesses across various industries.
               </motion.p>
               <motion.p 
