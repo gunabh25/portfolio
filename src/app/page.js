@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from '../components/Navbar';
 
 // Animation variants
@@ -177,10 +178,15 @@ export default function Home() {
               className="md:w-1/3"
               variants={scaleUp}
             >
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-tr from-blue-400 to-purple-500 shadow-xl mx-auto overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-white">
-                  <span className="text-xl font-medium">Your Photo</span>
-                </div>
+              <div className="w-64 h-64 md:w-100 md:h-100 rounded-full bg-gradient-to-tr from-blue-400 to-purple-500 shadow-xl mx-auto overflow-hidden">
+                <Image 
+                  src="/profile-image.jpg"
+                  alt="Gunabh Sharan - Professional Portrait"
+                  width={320}
+                  height={320}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
             </motion.div>
             
@@ -465,15 +471,15 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-medium mb-4">Contact</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>gunabhsharan.25@gmail.com</li>
-                <li>+91 7061557021</li>
-                <li>New Delhi, India</li>
+                <li>hello@example.com</li>
+                <li>+1 (555) 123-4567</li>
+                <li>San Francisco, CA</li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Gunabh Sharan. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Your Portfolio. All rights reserved.</p>
           </div>
         </div>
       </footer>
