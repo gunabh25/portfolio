@@ -402,7 +402,7 @@ export default function Home() {
             variants={staggerContainer}
           >
             {['JavaScript', 'React', 'Next.js', 'Node.js', 'TypeScript', 
-              'Tailwind CSS', 'MongoDB', 'Firebase', 'VS Code', 'Git'].map((skill, index) => (
+              'Tailwind CSS', 'MongoDB', 'Firebase', 'Framer Motion','C', 'C++', 'VS Code', 'Git', 'GitHub', 'Docker'].map((skill, index) => (
               <motion.div 
                 key={index}
                 className="bg-white p-6 rounded-xl shadow-md text-center"
